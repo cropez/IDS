@@ -24,7 +24,7 @@ export default function Social() {
         <Container maxWidth="xl" className={css(style.container)}>
             <Grid container xs={12} className="footer" display="flex" mt={15}>
                 <Grid item mt={10}>
-                    <Link href="https://www.youtube.com"
+                    <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
                         className="youtube social">
                         <FontAwesomeIcon icon={faYoutube} size="2x" />
                     </Link>

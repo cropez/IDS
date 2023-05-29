@@ -40,7 +40,7 @@ const CustomPickersDay = styled(PickersDay, {
 }));
 
 export default function Dashboard() {
-  const [value, setValue] = React.useState(dayjs('2022-11-07'));
+  const [value, setValue] = React.useState(dayjs('2023-05-29'));
 
   const renderWeekPickerDay = (date, selectedDates, pickersDayProps) => {
     if (!value) {
