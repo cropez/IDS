@@ -30,18 +30,18 @@ export default function Social() {
                     </Link>
                 </Grid>
                 <Grid item mt={10}>
-                    <Link href="https://www.facebook.com"
+                    <Link href="https://www.facebook.com/rickroll548/"
                         className="facebook social">
                         <FontAwesomeIcon icon={faFacebook} size="2x" />
                     </Link>
                 </Grid>
                 <Grid item mt={10}>
-                    <Link href="https://www.twitter.com" className="twitter social">
+                    <Link href="https://twitter.com/rickroll" className="twitter social">
                         <FontAwesomeIcon icon={faTwitter} size="2x" />
                     </Link>
                 </Grid>
                 <Grid item mt={10}>
-                    <Link href="https://www.instagram.com"
+                    <Link href="https://www.instagram.com/explore/tags/rickroll/"
                         className="instagram social">
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </Link>

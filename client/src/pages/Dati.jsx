@@ -98,38 +98,22 @@ TablePaginationActions.propTypes = {
     rowsPerPage: PropTypes.number.isRequired,
 };
 
-function createData(name, Daudzums, cena) {
-    return { name, Daudzums, cena };
+function createData(name, Ieguldijumi,Darbs, Balles) {
+    return { name, Ieguldijumi,Darbs, Balles };
 }
 
 const rows = [
-    createData('Svaigas zivis', 305, 3.7),
-    createData('Fileja', 127, 4.2),
-    createData('Mencu aknas', 67, 3.3),
-    createData('Vistas cūkas ciskas', 27, 5.1),
-    createData('Twix', 121, 1.21),
+    createData('Legally Blonde ', 5, 19.99, 10),
+    createData('Dmitrijs', 7, 2.50, 10),
+    createData('Sergejs', 5, 2.50, 10),
+    createData('Ilja', 6, 2.50, 10),
+    createData('Andrejs', 6, 2.50, 10),
     createData('Mars', 232, 1.4),
     createData('Snickers', 97, 1.55),
     createData('Bounty', 131, 1.72),
     createData('Šokolādes batoniņi', 334, 0.89),
     createData('Šokolādes konfektes', 311, 7.2),
-    createData('Karameles', 132, 5.51),
-    createData('Sviests', 254, 2.20),
-    createData('Holandiešu siers', 155, 3.39),
-    createData('Gouda siers', 195, 5.76),
-    createData('Desu siers', 266, 2.64),
-    createData('Krējuma siers', 80, 2.80),
-    createData('Rīsi', 237, 3.10),
-    createData('Hercules', 229, 3.78),
-    createData('Prosa', 208, 2.80),
-    createData('Ananāsu konservi.', 308, 3.2),
-    createData('Zaļie zirnīši', 350, 1.58),
-    createData('Čipsi', 245, 4.78),
-    createData('Dabiskās sulas', 74, 3.58),
-    createData('Cola', 286, 1.78),
-    createData('Sprite', 393, 1.45),
-    createData('Fanta', 66, 1.39),
-    createData('Āboli', 229, 2.21),
+ 
 ].sort((a, b) => (a.Daudzums < b.Daudzums ? -1 : 1));
 
 export default function CustomPaginationActionsTable() {
@@ -170,8 +154,9 @@ export default function CustomPaginationActionsTable() {
                             <TableHead>
                             <TableRow>
                                 <TableCell>Name</TableCell>
-                                <TableCell align="right">Daudzums</TableCell>
-                                <TableCell align="right">Cena</TableCell>
+                                <TableCell align="right">Ieguldijumi</TableCell>
+                                <TableCell align="right">Darbs</TableCell>
+                                <TableCell align="right">Balles</TableCell>
                             </TableRow>
                             </TableHead>
                             <TableBody>
@@ -184,10 +169,13 @@ export default function CustomPaginationActionsTable() {
                                             {row.name}
                                         </TableCell>
                                         <TableCell style={{ width: 160 }} align="right">
-                                            {row.Daudzums}
+                                            {row.Ieguldijumi}
                                         </TableCell>
-                                        <TableCell style={{ width: 160 }} align="right">
-                                            {row.cena}
+                                        <TableCell style={{ width: 400 }} align="right">
+                                            {row.Darbs}
+                                        </TableCell>
+                                        <TableCell style={{ width: 550 }} align="right">
+                                            {row.Balles}
                                         </TableCell>
                                     </TableRow>
                                 ))}
