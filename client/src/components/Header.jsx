@@ -122,26 +122,26 @@ const Header = () => {
           />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button
-              variant="outlined"
+              variant="lined"
               onClick={() => handleButtonClick("/dati")}
             >
               Dati
             </Button>
 
             <Button
-              variant="outlined"
+              variant="lined"
               onClick={() => handleButtonClick("/block")}
             >
               Ekonomiskais bloks
             </Button>
             <Button
-              variant="outlined"
+              variant="lined"
               onClick={() => handleButtonClick("/profile")}
             >
               Profile
             </Button>
             <Button
-              variant="outlined"
+              variant="lined"
               onClick={onLogout}
             >
               Iziet
