@@ -29,8 +29,8 @@ const Header = () => {
       pageURL: "/dati"
     },
     {
-      menuTitle: "Ekonomiskais bloks",
-      pageURL: "/block"
+      menuTitle: "informacija",
+      pageURL: "/informacija"
     },
     {
       menuTitle: "Profile",
@@ -125,7 +125,7 @@ const Header = () => {
 
             <Button
               variant="lined"
-              onClick={() => handleButtonClick("/block")}
+              onClick={() => handleButtonClick("/informacija")}
             >
               Ekonomiskais bloks
             </Button>
