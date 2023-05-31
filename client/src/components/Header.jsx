@@ -2,7 +2,6 @@ import * as React from "react";
 import { useNavigate } from 'react-router-dom';
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -51,12 +50,9 @@ const Header = () => {
   }
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" color="default">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AccountCircleIcon
-            sx={{ display: { xs: "none", md: "flex", fontSize: 40 }, mr: 2 }}
-          />
           <Typography
             variant="h5"
             noWrap
@@ -72,10 +68,12 @@ const Header = () => {
               textDecoration: "none"
             }}
           >
-            GRĀMATVEDĪBAS SISTĒMA
+            IDS
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1 }} />
+
+          <Box sx={{ display: { xs: "flex", md: "flex" } }}>
             <IconButton
               size="large"
               aria-controls="menu-appbar"
@@ -100,7 +98,7 @@ const Header = () => {
               open={open}
               onClose={() => setAnchorEl(null)}
               sx={{
-                display: { xs: "block", md: "none" }
+                display: { xs: "block", md: "block" }
               }}
             >
               {menuItems.map((menuItem, i) => {
@@ -117,10 +115,7 @@ const Header = () => {
             </Menu>
           </Box>
 
-          <AccountCircleIcon
-            sx={{ display: { xs: "flex", flexDirection: "row-reverse", md: "none", fontSize: 40 }, mr: 1 }}
-          />
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "none" } }}>
             <Button
               variant="lined"
               onClick={() => handleButtonClick("/dati")}
@@ -154,4 +149,4 @@ const Header = () => {
 }
 
 
-export default Header
+export default Header;
