@@ -68,7 +68,7 @@ const Header = () => {
               textDecoration: "none"
             }}
           >
-            IDS
+            ESSVE
           </Typography>
 
           <Box sx={{ flexGrow: 1 }} />
