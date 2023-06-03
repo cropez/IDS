@@ -28,23 +28,17 @@ export default function Dashboard() {
 
 <Grid container xs={12} justifyContent="center" mt={10} fontSize="xxx-large">
 
-  <TextField label="Forma" variant="standard" />
+  <TextField disabled label="Forma"  variant="standard" />
 </Grid>
 <Grid item xs={12} md={10} mt={30}>
-<TextField label="Email" />
-<TextField label="Telefons" />
-<TextField
-          id="standard-multiline-static"
-          multiline
-          rows={10}
-          defaultValue="Text"
-          variant="standard"
-        />
-        <Button variant="outlined" >
-             Pasūtīt risinājumu
-        </Button>
-          <Button variant="contained"  endIcon={<SendIcon />}>
-            Vai reģistrēties
+<TextField sx={{ m: 1, width: '55ch' }} label="Email" />
+<TextField sx={{ m: 1, width: '55ch' }} label="Telefons" />
+<TextField id="standard-basic" sx={{ m: 1, width: '55ch' }} rows={10} variant="standard" label="Text" />
+  <Button sx={{ m: 5, width: '25ch' }} variant="outlined" >
+    Pasūtīt risinājumu
+      </Button>
+        <Button variant="contained"  sx={{ m: 1, width: '25ch' }} endIcon={<SendIcon />}>
+          Vai reģistrēties
           </Button>
 </Grid>       
       <Grid container xs={12} justifyContent="center" mt={10} fontSize="xxx-large">
