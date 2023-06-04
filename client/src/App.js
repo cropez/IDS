@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Footer from "./components/footer";
 
 
+
 export default function App() {
   const isAuth = !!window.localStorage.getItem('auth');
   console.log(isAuth);
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/informacija" element={<Informacija />} />
         <Route path="/dati" element={<Dati />} />
+        
       </Routes>
       <Footer />
     </>

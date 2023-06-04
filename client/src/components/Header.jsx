@@ -40,6 +40,10 @@ const Header = () => {
       menuTitle: "Iziet",
       pageURL: "/authorizacija"
     },
+    {
+      menuTitle: "Bildes",
+      pageURL: "/Bildes"
+    },
   ];
 
   const onLogout = () => {
@@ -131,6 +135,12 @@ const Header = () => {
             </Button>
             <Button
               variant="lined"
+              onClick={() => handleButtonClick("/Bildes")}
+            >
+              Bildes
+            </Button>
+            <Button
+              variant="lined"
               onClick={() => handleButtonClick("/profile")}
             >
               Profile
@@ -141,6 +151,7 @@ const Header = () => {
             >
               Iziet
             </Button>
+            
           </Box>
         </Toolbar>
       </Container>
