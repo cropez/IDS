@@ -103,16 +103,10 @@ function createData(name, Ieguldijumi,Darbs, Balles) {
 }
 
 const rows = [
-    createData('Legally Blonde ', 5, 19.99, 10),
-    createData('Dmitrijs', 7, 2.50, 10),
-    createData('Sergejs', 5, 2.50, 10),
-    createData('Ilja', 6, 2.50, 10),
-    createData('Andrejs', 6, 2.50, 10),
-    createData('Mars', 232, 1.4),
-    createData('Snickers', 97, 1.55),
-    createData('Bounty', 131, 1.72),
-    createData('Šokolādes batoniņi', 334, 0.89),
-    createData('Šokolādes konfektes', 311, 7.2),
+    createData('Dmitrijs', 9, 10, 10),
+    createData('Sergejs', 6, 7, 7),
+    createData('Ilja', 6, 6, 6),
+    createData('Andrejs', 9, 9, 9),
  
 ].sort((a, b) => (a.Daudzums < b.Daudzums ? -1 : 1));
 
