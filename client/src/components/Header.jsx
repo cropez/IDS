@@ -42,7 +42,7 @@ const Header = () => {
     },
     {
       menuTitle: "Bildes",
-      pageURL: "/Bildes"
+      pageURL: "/bildes"
     },
   ];
 
@@ -144,6 +144,12 @@ const Header = () => {
               onClick={() => handleButtonClick("/profile")}
             >
               Profile
+            </Button>
+            <Button
+              variant="lined"
+              onClick={() => handleButtonClick("/bildes")}
+            >
+              Bildes
             </Button>
             <Button
               variant="lined"
