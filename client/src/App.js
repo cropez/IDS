@@ -6,6 +6,7 @@ import Dashboard from "./pages/dashboard";
 import Dati from "./pages/Dati";
 import Informacija from "./pages/informacija"
 import Bildes from "./pages/bildes";
+import Regestracija from  "./pages/Regestracija"
 //components
 import Header from "./components/Header";
 import Footer from "./components/footer";
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/informacija" element={<Informacija />} />
         <Route path="/dati" element={<Dati />} />
         <Route path="/bildes" element={<Bildes/>}/>
+        <Route path="/registracija" element={< Regestracija/>}/>
         
       </Routes>
       <Footer />

@@ -165,6 +165,14 @@ export default function Autorizacija() {
                     : 'Pieteikties'
                 }
               </Button>
+              <Button
+                fullWidth
+                variant="outlined"
+                sx={{ mt: 3, mb: 2 }}
+                onClick={() => navigate('/registracija')}
+              >
+                'If you are not registered, click here to register'
+              </Button>
             </Box>
           </Box>
         </Grid>
