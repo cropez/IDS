@@ -13,7 +13,7 @@ import Layout from '../components/Layout';
 export default function bildes() {
   return (<><Layout>
 
-    <Grid container xs={5} justifyContent="center" mt={10} fontSize="xxx-large">
+    <Grid container xs={5} justifyContent="center" fontSize="xxx-large">
       <Avatar alt="D" image={IMG} src="../img/img.png" sx={{ width: 132, height: 132 }} />
       <Typography>
 

@@ -10,7 +10,7 @@ import { PickersDay } from '@mui/x-date-pickers/PickersDay';
 import { Container } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import { useState, useEffect } from 'react';
-import Banner from '../img/banner-4.png'
+import Banner from '../img/IDS.png'
 import CardMedia from "@mui/material/CardMedia"
 import '../styles/img.css';
 import Layout from '../components/Layout';

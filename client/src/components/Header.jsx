@@ -38,7 +38,7 @@ const Header = () => {
     },
     {
       menuTitle: "Iziet",
-      pageURL: "/authorizacija"
+      pageURL: "/Autorizacija"
     },
     {
       menuTitle: "Bildes",
