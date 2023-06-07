@@ -8,9 +8,10 @@ import TextField from '@mui/material/TextField';
 import Avatar from '@mui/material/Avatar';
 import '../styles/img.css';
 import IMG from '../img/img.png';
+import Layout from '../components/Layout';
 
 export default function bildes() {
-  return (<>
+  return (<><Layout>
 
     <Grid container xs={5} justifyContent="center" mt={10} fontSize="xxx-large">
       <Avatar alt="D" image={IMG} src="../img/img.png" sx={{ width: 132, height: 132 }} />
@@ -47,6 +48,7 @@ Veidoja programmatūras kopejo struktūru, un to aspektus.ka arī veidoja vizuā
       </Typography>
       <Avatar alt="A" src="A" sx={{ width: 132, height: 132 }} />
     </Grid>
+    </Layout>
   </>
   );
 

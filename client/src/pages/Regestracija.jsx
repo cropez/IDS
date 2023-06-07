@@ -11,6 +11,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { css, StyleSheet } from 'aphrodite';
 import Spinner from '../components/Spinner'
+import Layout from '../components/Layout';
 
 const theme = createTheme();
 
@@ -54,6 +55,7 @@ export default function Registration() {
   })
 
   return (
+    <Layout>
     <ThemeProvider theme={theme}>
       <Container maxWidth="xs" className={css(style.container)}>
         <Grid container xs={12} mt={25} >
@@ -155,5 +157,6 @@ export default function Registration() {
         </Grid>
       </Container>
     </ThemeProvider>
+    </Layout>
   );
 }

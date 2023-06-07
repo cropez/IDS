@@ -10,6 +10,7 @@ import SendIcon from '@mui/icons-material/Send';
 import Stack from '@mui/material/Stack';
 import { deepOrange, deepPurple } from '@mui/material/colors';
 import '../styles/img.css';
+import Layout from '../components/Layout';
 
 dayjs.extend(isBetweenPlugin);
 
@@ -21,7 +22,7 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <>
+    <><Layout>
       <Container maxWidth="xl" sx={{ display: "flex", height: "150px" }}>
         <Grid container xs={12} justifyContent="center" mt={10} fontSize="xxx-large">
           <Typography>
@@ -68,6 +69,7 @@ export default function Dashboard() {
           </div>
         </Grid>
       </Container>
+      </Layout>
     </>
   );
 }

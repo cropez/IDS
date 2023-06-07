@@ -13,6 +13,7 @@ import { useState, useEffect } from 'react';
 import Banner from '../img/banner-4.png'
 import CardMedia from "@mui/material/CardMedia"
 import '../styles/img.css';
+import Layout from '../components/Layout';
 
 
 dayjs.extend(isBetweenPlugin);
@@ -70,7 +71,8 @@ export default function Dashboard() {
     setInterval(() => setDateState(new Date()), 30000);
   }, []);
   return (
-    <> <Container maxWidth="xl" sx={{ display: "flex", height: "150px" }}>
+    <> 
+    <Layout><Container maxWidth="xl" sx={{ display: "flex", height: "150px" }}>
       <Grid container xs={12} justifyContent="center" mt={10} fontSize="xxx-large">
         <div>
           {dateState.toLocaleString('en-LV', {
@@ -104,6 +106,6 @@ export default function Dashboard() {
             />
           </Grid>
         </Grid>
-      </Container></>
+      </Container></Layout></>
   );
 }

@@ -22,6 +22,7 @@ import { Button } from "@mui/material";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState, useEffect } from 'react';
 import TableHead from "@mui/material/TableHead";
+import Layout from '../components/Layout';
 
 
 const theme = createTheme({
@@ -131,7 +132,7 @@ export default function CustomPaginationActionsTable() {
         setInterval(() => setDateState(new Date()), 30000);
     }, []);
     return (
-        <><Container maxWidth="xl" sx={{ display: "flex", height: "150px" }}>
+        <><Layout><Container maxWidth="xl" sx={{ display: "flex", height: "150px" }}>
             <Grid container xs={12} justifyContent="center" mt={10} fontSize="xxx-large">
                 <div>
                     {dateState.toLocaleString('en-LV', {
@@ -238,6 +239,6 @@ export default function CustomPaginationActionsTable() {
                         </Grid>
                     </Grid>
                 </ThemeProvider>
-            </Container></>
+            </Container></Layout></>
     );
 }

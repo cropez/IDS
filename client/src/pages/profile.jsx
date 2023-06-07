@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react';
 import Grid from '@mui/material/Grid';
 import '../styles/img.css';
 import Divider from '@mui/material/Divider';
+import Layout from '../components/Layout';
 
 export default function bildes() {
-  return (<>
+  return (<><Layout>
 
     <Grid container xs={5} justifyContent="center" mt={10} fontSize="xxx-large">
       <Typography>
@@ -66,6 +67,7 @@ export default function bildes() {
       Vārds
            </Typography>
           </Grid>
+        </Layout>
   </>
   );
 
