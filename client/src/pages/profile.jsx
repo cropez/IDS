@@ -4,7 +4,8 @@ import Grid from '@mui/material/Grid';
 import '../styles/img.css';
 import Divider from '@mui/material/Divider';
 import Layout from '../components/Layout';
-
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 export default function bildes() {
   return (<><Layout>
 
@@ -68,6 +69,13 @@ export default function bildes() {
            </Typography>
           </Grid>
         </Layout>
+        <Grid container justifyContent="center" mt={-30} fontSize="xxx-large">
+      <Button xs={12} variant="contained" endIcon={<SendIcon />}>
+        Iziet no profila
+      </Button>
+    </Grid>
+
+
   </>
   );
 
